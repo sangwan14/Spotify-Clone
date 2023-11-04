@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Best Music Player </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="1" class="brand"><img src="Spotify_Logo.png" alt="Spotify"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Punjabi Top 10</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/cover1.jpeg" alt="1">
+                    <span class="songName">On Top</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover2.jpeg" alt="2">
+                    <span class="songName">Baller</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover3.jpeg" alt="3">
+                    <span class="songName">Players</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover4.jpeg" alt="4">
+                    <span class="songName">Daku</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover5.jpeg" alt="5">
+                    <span class="songName">Her</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover6.jpeg" alt="6">
+                    <span class="songName">Summer High</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover7.jpeg" alt="7">
+                    <span class="songName">Mehrma</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="6" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover8.jpeg" alt="8">
+                    <span class="songName">Taur</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="7" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover9.jpeg" alt="9">
+                    <span class="songName">Rubicon Drill</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="8" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cover10.jpeg" alt="10">
+                    <span class="songName">Bewafa</span>
+                    <span class="songlistplay"><span class="timestamp"><span class="timeValue"></span><i id="9" class="far songItemPlay fa-play-circle"></i></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i> 
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">On Top</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/0336e80c54.js" crossorigin="anonymous"></script>
+</body>
+</html>
