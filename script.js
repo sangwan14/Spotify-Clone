@@ -17,16 +17,16 @@ function formatDuration(duration) {
 }
 
 let songs = [
-    {songName: "On Top", filePath: "songs/1.mp3", coverPath: "covers/cover1.jpeg"},
-    {songName: "Baller", filePath: "songs/2.mp3", coverPath: "covers/cover2.jpeg"},
-    {songName: "Players", filePath: "songs/3.mp3", coverPath: "covers/cover3.jpeg"},
-    {songName: "Daku", filePath: "songs/4.mp3", coverPath: "covers/cover4.jpeg"},
-    {songName: "Her", filePath: "songs/5.mp3", coverPath: "covers/cover5.jpeg"},
-    {songName: "Summer High", filePath: "songs/6.mp3", coverPath: "covers/cover6.jpeg"},
-    {songName: "Mehrma", filePath: "songs/7.mp3", coverPath: "covers/cover7.jpeg"},
-    {songName: "Taur", filePath: "songs/8.mp3", coverPath: "covers/cover8.jpeg"},
-    {songName: "Rubicon Drill", filePath: "songs/9.mp3", coverPath: "covers/cover9.jpeg"},
-    {songName: "Bewafa", filePath: "songs/10.mp3", coverPath: "covers/cover10.jpeg"},
+    {songName: "On Top", filePath: "songs/1.mp3", coverPath: "covers/cover1.jpeg", time: "3:03"},
+    {songName: "Baller", filePath: "songs/2.mp3", coverPath: "covers/cover2.jpeg", time: "2:28"},
+    {songName: "Players", filePath: "songs/3.mp3", coverPath: "covers/cover3.jpeg", time: "2:51"},
+    {songName: "Daku", filePath: "songs/4.mp3", coverPath: "covers/cover4.jpeg", time: "2:14"},
+    {songName: "Her", filePath: "songs/5.mp3", coverPath: "covers/cover5.jpeg", time: "2:34"},
+    {songName: "Summer High", filePath: "songs/6.mp3", coverPath: "covers/cover6.jpeg", time: "3:25"},
+    {songName: "Mehrma", filePath: "songs/7.mp3", coverPath: "covers/cover7.jpeg", time: "4:09"},
+    {songName: "Taur", filePath: "songs/8.mp3", coverPath: "covers/cover8.jpeg", time: "2:48"},
+    {songName: "Rubicon Drill", filePath: "songs/9.mp3", coverPath: "covers/cover9.jpeg", time: "3:08"},
+    {songName: "Bewafa", filePath: "songs/10.mp3", coverPath: "covers/cover10.jpeg", time: "3:42"},
 ]
 
 songItems.forEach((element, i)=>{ 
@@ -34,9 +34,7 @@ songItems.forEach((element, i)=>{
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
     let audioElement = new Audio(songs[i].filePath);
     let durationField = element.getElementsByClassName("timeValue")[0];
-    audioElement.addEventListener("loadedmetadata", function() {
-        durationField.innerHTML = formatDuration(audioElement.duration);
-    });
+    durationField.innerHtml = songs[i].time;
 })
 
 // Handle play/pause click
